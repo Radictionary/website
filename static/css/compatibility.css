@@ -1,0 +1,59 @@
+@viewport {
+    width: device-width;
+    zoom: 1;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .me-div {
+      visibility: hidden;
+    }
+    .creationsbox {
+      visibility: hidden;
+    }
+    .creations {
+      visibility: hidden;
+    }
+    .moreSvg {
+      visibility: hidden;
+    }
+    .tools_section {
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+    .icon {
+      font-size: 3rem;
+    }
+    .tools_icons {
+      visibility: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 1082px) {
+    .creations {
+      position: absolute;
+      bottom: 3rem;
+    }
+    .moreSvg {
+      position: absolute;
+      bottom: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #text1 {
+      text-align: center;
+      transform: rotate(0deg);
+    }
+    #text2 {
+      top: 0.5rem;
+      text-align: center;
+      transform: rotate(0deg);
+      padding: 0 3rem;
+    }
+    .box {
+      height: 80%;
+      top: 5%;
+      bottom: 4%
+    }
+  }
+  
