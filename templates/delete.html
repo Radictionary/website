@@ -1,0 +1,12 @@
+{{template "base" .}}
+
+{{define "content"}}
+<h1>Your information and customization has been removed</h1>
+{{end}}
+
+{{define "js"}}
+<script>
+    localStorage.removeItem("--light-color")
+    localStorage.removeItem("--dark-color")
+</script>
+{{end}}

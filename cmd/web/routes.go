@@ -23,8 +23,8 @@ func routes(app *config.AppConfig) http.Handler {
 	mux.Get("/delete", handlers.Repo.Delete)
 
 
-	fileServer := http.FileServer(http.Dir("./static/"))
-	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
+	fileServer := http.FileServer(http.Dir("./frontend/"))
+	mux.Handle("/frontend/*", http.StripPrefix("/frontend", fileServer))
 
 	return mux
 }

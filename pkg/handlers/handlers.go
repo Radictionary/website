@@ -49,6 +49,8 @@ func (m *Repository) Delete(w http.ResponseWriter, r *http.Request) {
 		return nil
 	  })
 
+	  render.RenderTemplate(w, "delete.html", &models.TemplateData{})
+
 }
 
 // Home is the handler for the home page
